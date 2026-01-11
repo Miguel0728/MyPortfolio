@@ -1,0 +1,89 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bgGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1e47;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="ticketGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00f0ff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ff00ff;stop-opacity:0.8" />
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bgGradient1)"/>
+  
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="0" x2="800" y2="0" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="0" y1="100" x2="800" y2="100" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="0" y1="200" x2="800" y2="200" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="0" y1="300" x2="800" y2="300" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="0" y1="400" x2="800" y2="400" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="0" y1="500" x2="800" y2="500" stroke="#00f0ff" stroke-width="1"/>
+    
+    <line x1="0" y1="0" x2="0" y2="500" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="500" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="500" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="500" stroke="#00f0ff" stroke-width="1"/>
+    <line x1="800" y1="0" x2="800" y2="500" stroke="#00f0ff" stroke-width="1"/>
+  </g>
+
+  <!-- Main Ticket -->
+  <g transform="translate(250, 150)">
+    <!-- Ticket shape -->
+    <rect x="0" y="0" width="300" height="180" rx="10" fill="url(#ticketGradient)" opacity="0.2" filter="url(#glow)"/>
+    <rect x="0" y="0" width="300" height="180" rx="10" fill="none" stroke="url(#ticketGradient)" stroke-width="3"/>
+    
+    <!-- Perforated line -->
+    <line x1="200" y1="20" x2="200" y2="30" stroke="#00f0ff" stroke-width="2" stroke-dasharray="5,5"/>
+    <line x1="200" y1="40" x2="200" y2="50" stroke="#00f0ff" stroke-width="2" stroke-dasharray="5,5"/>
+    <line x1="200" y1="60" x2="200" y2="70" stroke="#00f0ff" stroke-width="2" stroke-dasharray="5,5"/>
+    <line x1="200" y1="80" x2="200" y2="90" stroke="#00f0ff" stroke-width="2" stroke-dasharray="5,5"/>
+    <line x1="200" y1="100" x2="200" y2="110" stroke="#00f0ff" stroke-width="2" stroke-dasharray="5,5"/>
+    <line x1="200" y1="120" x2="200" y2="130" stroke="#00f0ff" stroke-width="2" stroke-dasharray="5,5"/>
+    <line x1="200" y1="140" x2="200" y2="150" stroke="#00f0ff" stroke-width="2" stroke-dasharray="5,5"/>
+    <line x1="200" y1="160" x2="200" y2="170" stroke="#00f0ff" stroke-width="2" stroke-dasharray="5,5"/>
+    
+    <!-- Ticket details -->
+    <text x="30" y="50" font-family="Orbitron, sans-serif" font-size="24" font-weight="bold" fill="#00f0ff">TICKET</text>
+    <text x="30" y="80" font-family="Rajdhani, sans-serif" font-size="16" fill="#a0a0d0">EVENT</text>
+    <text x="30" y="105" font-family="Rajdhani, sans-serif" font-size="14" fill="#ffffff">Concert 2025</text>
+    
+    <text x="30" y="135" font-family="Rajdhani, sans-serif" font-size="16" fill="#a0a0d0">DATE</text>
+    <text x="30" y="160" font-family="Rajdhani, sans-serif" font-size="14" fill="#ffffff">Dec 25, 2025</text>
+    
+    <!-- Barcode on stub -->
+    <g transform="translate(220, 40)">
+      <rect x="0" y="0" width="3" height="100" fill="#ff00ff"/>
+      <rect x="5" y="0" width="2" height="100" fill="#ff00ff"/>
+      <rect x="9" y="0" width="4" height="100" fill="#ff00ff"/>
+      <rect x="15" y="0" width="2" height="100" fill="#ff00ff"/>
+      <rect x="19" y="0" width="3" height="100" fill="#ff00ff"/>
+      <rect x="24" y="0" width="2" height="100" fill="#ff00ff"/>
+      <rect x="28" y="0" width="5" height="100" fill="#ff00ff"/>
+      <rect x="35" y="0" width="2" height="100" fill="#ff00ff"/>
+      <rect x="39" y="0" width="3" height="100" fill="#ff00ff"/>
+      <rect x="44" y="0" width="2" height="100" fill="#ff00ff"/>
+    </g>
+  </g>
+
+  <!-- Floating decorative elements -->
+  <circle cx="150" cy="100" r="60" fill="none" stroke="#00f0ff" stroke-width="2" opacity="0.3"/>
+  <circle cx="150" cy="100" r="45" fill="none" stroke="#ff00ff" stroke-width="2" opacity="0.3"/>
+  
+  <circle cx="650" cy="400" r="50" fill="none" stroke="#ff00ff" stroke-width="2" opacity="0.3"/>
+  <circle cx="650" cy="400" r="35" fill="none" stroke="#00f0ff" stroke-width="2" opacity="0.3"/>
+
+  <!-- Title -->
+  <text x="400" y="450" font-family="Orbitron, sans-serif" font-size="32" font-weight="900" fill="#00f0ff" text-anchor="middle" filter="url(#glow)">VENTA DE BOLETOS</text>
+</svg>

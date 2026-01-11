@@ -1,0 +1,94 @@
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bgGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1e47;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="shopGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff00ff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.8" />
+    </linearGradient>
+
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bgGradient2)"/>
+  
+  <!-- Grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="0" x2="800" y2="0" stroke="#ff00ff" stroke-width="1"/>
+    <line x1="0" y1="100" x2="800" y2="100" stroke="#ff00ff" stroke-width="1"/>
+    <line x1="0" y1="200" x2="800" y2="200" stroke="#ff00ff" stroke-width="1"/>
+    <line x1="0" y1="300" x2="800" y2="300" stroke="#ff00ff" stroke-width="1"/>
+    <line x1="0" y1="400" x2="800" y2="400" stroke="#ff00ff" stroke-width="1"/>
+    
+    <line x1="0" y1="0" x2="0" y2="500" stroke="#ff00ff" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="500" stroke="#ff00ff" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="500" stroke="#ff00ff" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="500" stroke="#ff00ff" stroke-width="1"/>
+    <line x1="800" y1="0" x2="800" y2="500" stroke="#ff00ff" stroke-width="1"/>
+  </g>
+
+  <!-- Shopping Cart Icon -->
+  <g transform="translate(300, 120)" filter="url(#glow2)">
+    <!-- Cart body -->
+    <path d="M 20 40 L 30 80 L 150 80 L 160 40 Z" fill="url(#shopGradient)" opacity="0.3"/>
+    <path d="M 20 40 L 30 80 L 150 80 L 160 40 Z" fill="none" stroke="#ff00ff" stroke-width="4"/>
+    
+    <!-- Cart handle -->
+    <path d="M 10 40 L 20 40" stroke="#ff00ff" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="10" cy="40" r="6" fill="#ff00ff"/>
+    
+    <!-- Cart wheels -->
+    <circle cx="50" cy="95" r="12" fill="none" stroke="#00f0ff" stroke-width="4"/>
+    <circle cx="130" cy="95" r="12" fill="none" stroke="#00f0ff" stroke-width="4"/>
+    
+    <!-- Product boxes in cart -->
+    <rect x="45" y="50" width="30" height="25" fill="none" stroke="#00f0ff" stroke-width="2"/>
+    <rect x="85" y="50" width="30" height="25" fill="none" stroke="#00f0ff" stroke-width="2"/>
+    <rect x="125" y="50" width="20" height="25" fill="none" stroke="#00f0ff" stroke-width="2"/>
+  </g>
+
+  <!-- Product Cards -->
+  <g transform="translate(150, 260)">
+    <!-- Card 1 -->
+    <rect x="0" y="0" width="120" height="140" rx="8" fill="none" stroke="#00f0ff" stroke-width="2"/>
+    <rect x="10" y="10" width="100" height="80" fill="url(#shopGradient)" opacity="0.2"/>
+    <line x1="15" y1="105" x2="105" y2="105" stroke="#ff00ff" stroke-width="2"/>
+    <line x1="15" y1="115" x2="80" y2="115" stroke="#a0a0d0" stroke-width="2"/>
+    <line x1="15" y1="125" x2="90" y2="125" stroke="#a0a0d0" stroke-width="2"/>
+    
+    <!-- Card 2 -->
+    <rect x="140" y="0" width="120" height="140" rx="8" fill="none" stroke="#00f0ff" stroke-width="2"/>
+    <rect x="150" y="10" width="100" height="80" fill="url(#shopGradient)" opacity="0.2"/>
+    <line x1="155" y1="105" x2="245" y2="105" stroke="#ff00ff" stroke-width="2"/>
+    <line x1="155" y1="115" x2="220" y2="115" stroke="#a0a0d0" stroke-width="2"/>
+    <line x1="155" y1="125" x2="230" y2="125" stroke="#a0a0d0" stroke-width="2"/>
+    
+    <!-- Card 3 -->
+    <rect x="280" y="0" width="120" height="140" rx="8" fill="none" stroke="#00f0ff" stroke-width="2"/>
+    <rect x="290" y="10" width="100" height="80" fill="url(#shopGradient)" opacity="0.2"/>
+    <line x1="295" y1="105" x2="385" y2="105" stroke="#ff00ff" stroke-width="2"/>
+    <line x1="295" y1="115" x2="360" y2="115" stroke="#a0a0d0" stroke-width="2"/>
+    <line x1="295" y1="125" x2="370" y2="125" stroke="#a0a0d0" stroke-width="2"/>
+  </g>
+
+  <!-- Decorative elements -->
+  <circle cx="680" cy="120" r="40" fill="none" stroke="#ff00ff" stroke-width="2" opacity="0.3"/>
+  <circle cx="680" cy="120" r="25" fill="none" stroke="#00f0ff" stroke-width="2" opacity="0.3"/>
+  
+  <polygon points="120,100 140,120 120,140 100,120" fill="none" stroke="#00f0ff" stroke-width="2" opacity="0.3"/>
+  <polygon points="125,105 135,115 125,125 115,115" fill="none" stroke="#ff00ff" stroke-width="2" opacity="0.3"/>
+
+  <!-- Title -->
+  <text x="400" y="60" font-family="Orbitron, sans-serif" font-size="36" font-weight="900" fill="#ff00ff" text-anchor="middle" filter="url(#glow2)">TIENDA XYZ</text>
+  <text x="400" y="90" font-family="Rajdhani, sans-serif" font-size="16" fill="#a0a0d0" text-anchor="middle">E-COMMERCE PLATFORM</text>
+</svg>

@@ -857,7 +857,32 @@ body::before {
   }
 
   .nav-menu {
-    display: none;
+    display: flex;
+    gap: 1.2rem;
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+    border-top: 1px solid rgba(0, 240, 255, 0.1);
+    padding-top: 0.8rem;
+  }
+
+  .nav-menu a {
+    font-size: 0.8rem;
+  }
+
+  .navbar {
+    padding: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .logo {
+    order: 1;
+  }
+
+  .nav-icons {
+    order: 2;
   }
 
   .hero,
